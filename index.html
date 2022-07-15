@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BS4  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container my-5 w-50">
+
+        <h3>Bài tập 5: Tính ngày tháng năm</h3>
+        <form>
+            <div class="form-row">
+                <div class="col-4">
+                    <input id="ngay" class="form-control" placeholder="Nhập ngày">
+                </div>
+                <div class="col-4">
+                    <input id="thang" class="form-control" placeholder="Nhập tháng">
+                </div>
+                <div class="col-4">
+                    <input id="nam" class="form-control" placeholder="Nhập năm">
+                </div>
+            </div>
+            <button type="button" id="btnHomQua" class="btn btn-info mt-2">Ngày hôm qua</button>
+            <button type="button" id="btnNgayMai" class="btn btn-info mt-2">Ngày mai</button>
+            <p class="alert alert-danger mt-2" id="hienThiNgay"></p>
+        </form>
+        <hr>
+        <br>
+
+
+        <h3>Bài tập 6: Tính ngày</h3>
+        <form>
+            <div class="form-row">
+                <div class="col-4">
+                    <input id="nhapThang" class="form-control" placeholder="Nhập tháng">
+                </div>
+                <div class="col-4">
+                    <input id="nhapNam" class="form-control" placeholder="Nhập năm">
+                </div>
+                <div class="col-4">
+                    <button type="button" id="btnTinhNgay" class="btn btn-info">Tính ngày</button>
+                </div>
+            </div>
+
+            <p class="alert alert-danger mt-2" id="hienThiNgayBai6"></p>
+        </form>
+        <hr>
+        <br>
+
+        
+        <h3>Bài tập 7: Đọc số</h3>
+        <form>
+            <div class="form-row">
+                <div class="col-4">
+                    <input id="nhapSo" class="form-control" placeholder="Nhập số 3 chữ số">
+                </div>
+                <div class="col-4">
+                    <button type="button" id="btnDocSo" class="btn btn-info">Đọc số</button>
+                </div>
+            </div>
+            <p class="alert alert-danger mt-2" id="hienThiSo"></p>
+        </form>
+        <hr>
+        <br>
+
+        <h3>Bài tập 8: Tìm sinh viên xa trường nhất</h3>
+        <form>
+            <h4 class="mt-4">Sinh viên 1</h4>
+            <div class="form-row">
+                <div class="col-4">
+                    <input id="ten1" class="form-control" placeholder="Nhập tên">
+                </div>
+                <div class="col-4">
+                    <input id="toaDoX1" class="form-control" placeholder="Nhập tọa độ x">
+                </div>
+                <div class="col-4">
+                    <input id="toaDoY1" class="form-control" placeholder="Nhập tọa độ y">
+                </div>
+            </div>
+            <h4 class="mt-4">Sinh viên 2</h4>
+            <div class="form-row">
+                <div class="col-4">
+                    <input id="ten2" class="form-control" placeholder="Nhập tên">
+                </div>
+                <div class="col-4">
+                    <input id="toaDoX2" class="form-control" placeholder="Nhập tọa độ x">
+                </div>
+                <div class="col-4">
+                    <input id="toaDoY2" class="form-control" placeholder="Nhập tọa độ y">
+                </div>
+            </div>
+            <h4 class="mt-4">Sinh viên 3</h4>
+            <div class="form-row">
+                <div class="col-4">
+                    <input id="ten3" class="form-control" placeholder="Nhập tên">
+                </div>
+                <div class="col-4">
+                    <input id="toaDoX3" class="form-control" placeholder="Nhập tọa độ x">
+                </div>
+                <div class="col-4">
+                    <input id="toaDoY3" class="form-control" placeholder="Nhập tọa độ y">
+                </div>
+            </div>
+            <h4 class="mt-4">Trường học</h4>
+            <div class="form-row">
+                <div class="col-4">
+                    <input id="toaDoX" class="form-control" placeholder="Nhập tọa độ x">
+                </div>
+                <div class="col-4">
+                    <input id="toaDoY" class="form-control" placeholder="Nhập tọa độ y">
+                </div>
+            </div>
+            <button type="button" id="btnTim" class="btn btn-info mt-2">Tìm</button>
+            <p class="alert alert-danger mt-2" id="hienThiTen"></p>
+        </form>
+        <hr>
+        <br>
+    </div>
+
+
+
+
+
+
+    <!-- JQUERY  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- BS4 JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <!-- MAIN JS  -->
+    <script src="./baitapThemJS_buoi4.js"></script>
+</body>
+
+</html>
